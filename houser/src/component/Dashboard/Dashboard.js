@@ -24,8 +24,8 @@ export default class Dashboard extends Component {
     });
   }
 
-  deleteHandler() {
-    axios.delete("http://localhost:3001/api/houses/:id").then(response => {
+  deleteHandler(id) {
+    axios.delete(`http://localhost:3001/api/houses/${id}`).then(response => {
       this.setState({
         houses: response.data
       });
