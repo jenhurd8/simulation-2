@@ -27,7 +27,16 @@ export default class Dashboard extends Component {
     let list = this.state.houses.map((element, index) => {
       return (
         <div key={index}>
-          <p>House</p>
+          <House
+            name={this.state.houses[index].name}
+            address={this.state.houses[index].address}
+            city={this.state.houses[index].city}
+            state={this.state.houses[index].state}
+            zip={this.state.houses[index].zip}
+            img={this.state.houses[index].img}
+            mortgage={this.state.houses[index].mortgage}
+            rent={this.state.houses[index].rent}
+          />
         </div>
       );
     });

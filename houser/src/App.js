@@ -13,7 +13,6 @@ class App extends Component {
           <Link to="/" className="links">
             Dashboard
           </Link>
-
           <br />
           <Link to="/wizard" className="links">
             Wizard

@@ -1,0 +1,9 @@
+.house {
+  background-color: #fec2c2;
+  margin: 10px;
+  height: 200px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
