@@ -15,8 +15,8 @@ massive(process.env.CONNECTION_STRING)
 
 const port = 3001;
 
-// app.post("/api/products", controller.create);
-// app.get("/api/products", controller.readProducts);
+app.get("/api/houses", controller.getHouses);
+app.post("/api/houses", controller.addHouse);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
