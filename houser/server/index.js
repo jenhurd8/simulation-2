@@ -17,6 +17,7 @@ const port = 3001;
 
 app.get("/api/houses", controller.getHouses);
 app.post("/api/houses", controller.addHouse);
+app.delete("/api/houses/:id", controller.deleteHouse);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

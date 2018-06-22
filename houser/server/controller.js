@@ -19,5 +19,13 @@ module.exports = {
     db.get_houses().then(houses => {
       return res.status(200).send(houses);
     });
+  },
+
+  deleteHouse: (req, res, next) => {
+    let db = req.app.get("db");
+
+    db.delete_house(req.params.id).then(houses => {
+      return res.status(200).send(houses);
+    });
   }
 };
